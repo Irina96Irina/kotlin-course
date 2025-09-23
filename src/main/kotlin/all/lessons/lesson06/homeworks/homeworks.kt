@@ -1,8 +1,9 @@
 package org.example.all.lessons.lesson06.homeworks
 
+fun main () {
 
+//Conditionals
 
-class Conditionals {
     // Задание 1: Определение сезона по номеру месяца
     fun determineSeason(month: Int) {
         if (month !in 1..12) {
@@ -96,13 +97,12 @@ fun convertTemperature(value: Double, unit: String) {
 }
 
 // Задание 7: Подбор одежды по погоде
-// Задание 7: Подбор одежды по погоде
-fun recommendClothing(temperature: Double) {
+fun recommendClothing(temperature: Int) {
     when {
         temperature < -30 || temperature > 35 -> println("Рекомендуется оставаться дома")
         temperature < 10 -> println("Куртка и шапка")
         temperature in 10..18 -> println("Ветровка")
-        temperature > 18 -> println("Футболка и шорты")
+        else -> println("Футболка и шорты")
     }
 }
 
